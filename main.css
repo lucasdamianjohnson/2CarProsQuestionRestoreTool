@@ -1,0 +1,323 @@
+
+body {
+    font-family: Arial,  sans-serif;
+    background : #111;
+    --dark1 : #111;
+    --debugBlue : #4f58ce;;
+    --debugGreen : rgb(130, 230, 117);
+}
+h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size:30px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color : var(--debugBlue);
+}
+
+.tool-form {
+width : 100%;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+.tool-form-group {
+    display: block;
+}
+
+
+
+.tool-form .tool-form-submit
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;
+    background-color: var(--debugBlue);
+    color : var(--dark1);
+    padding : 5px;
+    height : 30px;
+    min-width: 250px;
+    display: inline-block;
+    border: 1px solid var(--debugBlue);
+    transition: opacity  0.2s ease-in;
+    opacity : .6; 
+}
+.tool-form .tool-form-submit:hover
+{
+    transition: opacity  0.2s ease-in;
+    opacity : 1;
+}
+
+.tool-form .tool-form-submit.advanced
+{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: var(--debugGreen);
+    color : var(--dark1);
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding : 5px;
+    height : 30px;
+    min-width: 250px;
+    display: inline-block;
+    border: 1px solid var(--debugGreen);
+    transition: opacity  0.2s ease-in;
+    opacity : .6; 
+}
+.tool-form .tool-form-submit.advanced:hover
+{
+    transition: opacity  0.2s ease-in;
+    opacity : 1;
+}
+
+.tool-form label {
+    color: var(--debugGreen);
+    display: inline-block;
+    margin: 0;
+    padding-left:10px;
+    font-weight: bold;
+    border-bottom : var(--dark1) 1px solid;
+}
+
+
+
+
+
+.tool-form input[type="text"]:focus,
+.tool-form input[type="number"]:focus {
+    outline: none !important;
+    border:1px solid  var(--debugGreen);
+    transition: opacity  0.2s ease-in;
+    opacity : 1;
+}
+.tool-form input[type="text"]:hover,
+.tool-form input[type="number"]:hover {
+    transition: opacity  0.2s ease-in;
+    opacity : .9;
+}
+.tool-form input[type="text"],
+.tool-form input[type="number"]  {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: var(--dark1);
+    color : var(--debugGreen);
+    padding : 5px;
+    height : 30px;
+    min-width: 250px;
+    display: inline-block;
+    border: 1px solid var(--debugGreen);
+    transition: opacity  0.2s ease-in;
+    opacity : .6;
+}
+
+.tool-form input[type="checkbox"] {
+    -webkit-appearance: none;
+    height : 20px;
+    width : 20px;
+    margin : 0;
+    margin-top: 5px;
+    padding : 0;
+
+	background-color: #fafafa;
+	border: 1px solid #cacece;;
+	border-radius: 3px;
+}
+.tool-form input[type="checkbox"]:checked {
+	background-color: rgb(28, 107, 58);
+	border: 1px solid black;
+    color: #99a1a7;
+}
+.tool-form input[type="checkbox"]:active, .tool-form input[type="checkbox"]:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+
+.true {
+    color : green;
+}
+.false {
+    color : red;
+}
+
+
+.restore-button {    
+    letter-spacing: 4px;
+        color : white;
+        border : none;
+        padding : 5px;
+        width : 125px;
+        height : 30px;
+        font-size : 15px;
+        font-weight: 500;
+        font-weight: bold;
+        font-family: Helvetica,sans-serif;
+        transition: background-color  0.2s ease-in;
+        background-color : rgb(15, 194, 54);
+}
+.restore-button:hover {
+    transition: background-color  0.2s ease-in;
+    background-color : rgb(32, 128, 53);
+}
+
+.ignore-button {    
+    letter-spacing: 4px;
+        color : white;
+        border : none;
+        padding : 5px;
+        width : 125px;
+        height : 30px;
+        font-size : 15px;
+        font-weight: 500;
+        font-weight: bold;
+        font-family: Helvetica,sans-serif;
+        transition: background-color  0.2s ease-in;
+        background-color : rgb(235, 71, 57);
+}
+.ignore-button:hover {
+    transition: background-color  0.2s ease-in;
+    background-color :  rgb(175, 36, 23);
+}
+
+.view-live-button {    
+    letter-spacing: 4px;
+        color : white;
+        border : none;
+        padding : 5px;
+        width : 125px;
+        height : 30px;
+        font-size : 15px;
+        font-weight: 500;
+        font-weight: bold;
+        font-family: Helvetica,sans-serif;
+        transition: background-color  0.2s ease-in;
+        background-color : rgb(62, 88, 235);
+}
+.view-live-button:hover {
+    transition: background-color  0.2s ease-in;
+    background-color :  rgb(36, 70, 163);
+}
+
+.question-restoring {
+    position: absolute;
+    font-size : 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    left : 7%;
+    color : white;
+}
+
+.question-data-bar {
+    background-color : #333;
+    color : white;
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+.question-data-bar b {
+    color : var(--debugBlue);
+}
+.question-content.restoring {
+    transition: opacity 1s;
+    opacity: .1;
+} 
+.question {
+    box-shadow: 0 0 10px rgb(23, 23, 24);
+    position : relative;
+    line-height : 20px;
+    background-color : rgb(31, 34, 39);
+    color : white;
+    margin-top : 15px;
+    margin-bottom : 15px;
+}
+.question-body {
+    padding : 10px;
+    
+}
+
+.question-subject {
+    display:flex;
+}
+.question-body-text  {
+    margin-top: 5px;
+    width : 50%;
+    line-height: 30px;
+    padding : 10px;
+    font-family: Georgia, serif;
+    font-size : 16px;
+    background-color: rgb(30, 31, 32);
+} 
+.question-subject-title {
+    color : white;
+    font-size : 20px;
+}
+.question-body-title {
+    margin-right: 15px;
+    background-color: var(--debugBlue);
+    box-shadow: 0 0 10px var(--debugBlue);
+    color : white;
+    border-left: white 3px solid;
+    border-right: white 3px solid;
+    width : 100px;
+    font-family: Helvetica,sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.more-info {
+    border-bottom :3px solid rgb(33, 33, 54); 
+    display : flex;
+    align-items: center;
+    border-top-left-radius : 5px;
+    border-top-right-radius : 5px;
+    height : 30px;
+    background-color : #222;
+    opacity: .6;
+    font-weight: bold;
+    transition: opacity 0.2s ease-out;
+}
+.more-info:hover {
+    cursor : pointer;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
+.more-info .more-info-title {
+    color : var(--debugBlue);
+}
+.question hr {
+    height : 2px;
+    margin-left: 0;
+    border-radius: 30px;
+    color :  var(--debugBlue );
+    background-color : var(--debugBlue );  
+}
+.body-info-bar {
+    width : 30%;
+    height : 4px;
+    margin-left: 0;
+    border-radius: 30px;
+    color :  var(--debugBlue );
+    background-color : var(--debugBlue );
+}
+.more-info-bar {
+    color : var(--debugBlue );
+}
+.more-info-data {
+    background-color: #112;
+    color : var(--debugGreen );
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
+.more-info-data pre {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.more-info-data.open {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+.more-info-arrow {
+    fill : var(--debugBlue);
+    transition: transform .5s;
+    transform: rotate(90deg);
+}
+.more-info-arrow.open {
+    transition: transform .5s;
+    transform: rotate(180deg);
+}
